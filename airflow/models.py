@@ -193,7 +193,7 @@ class DagBag(BaseDagBag, LoggingMixin):
             self,
             dag_folder=None,
             executor=None,
-            include_examples=configuration.getboolean('core', 'LOAD_EXAMPLES'), log = None):
+            include_examples=configuration.getboolean('core', 'LOAD_EXAMPLES'), log=None):
 
         # do not use default arg in signature, to fix import cycle on plugin load
         if executor is None:
